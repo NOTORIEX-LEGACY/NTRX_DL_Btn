@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Download Link Button</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .btn {
+          background-color: red;
+          border: 1px solid black;
+          color: black;
+          /* padding: 12px 30px; */
+          cursor: pointer;
+          font-size: 20px;
+
+          /* TRANSITION */
+          transition-property: all;
+          transition-duration: .3s;
+        }
+        
+        /* Darker background on mouse-over */
+        .btn:hover {
+          background-color: rgb(0, 211, 112);
+          font-size: 21px;
+        }
+    </style>
+    <script defer>
+        function toSend(){
+            sessionStorage.setItem("file", "file_directory");
+        }
+    </script>
+</head>
+<body>
+    <!-- <p>Auto width:</p> -->
+    <button class="btn" title = "Ready to Download!" onclick = "toSend()"> <i class="fa fa-download"></i> Download <span class = "notoriex"> by NTRX</span></button>
+</body>
+</html>
